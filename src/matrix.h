@@ -44,14 +44,14 @@ namespace math
         //оператор умножения матриц A и B 
         friend Matrix operator*(const Matrix& A, const Matrix& B);
 
-		//оператор сложения матриц с присваиванием
-		Matrix& operator+=(const Matrix& M);
+	//оператор сложения матриц с присваиванием
+	Matrix& operator+=(const Matrix& M);
 
-		// оператор вычитания матриц с присваиванием
-		Matrix& operator-=(const Matrix& M);
+	// оператор вычитания матриц с присваиванием
+	Matrix& operator-=(const Matrix& M);
 
-		//оператор умножения матрицы на число с присваиванием
-		Matrix& operator*=(const real n);
+	//оператор умножения матрицы на число с присваиванием
+	Matrix& operator*=(const real n);
 
         //перегрузка оператора вывода для печати элементов матрицы в консоль
         friend std::ostream& operator<< (std::ostream &out, const Matrix &matrix);
