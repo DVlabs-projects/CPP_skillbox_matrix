@@ -118,7 +118,7 @@ namespace math
     {
         if ((A.cols_ != B.cols_) || (A.rows_ != B.rows_))
         {
-            std::cerr << "Matrix: Matrices can't be added!" << std::endl;
+            std::cerr << "Матрицы нельзя складывать!" << std::endl;
             return Matrix(0, 0);
         }
 
@@ -136,7 +136,7 @@ namespace math
     {
         if ((A.cols_ != B.cols_) || (A.rows_ != B.rows_))
         {
-            std::cerr << "Matrix: Matrices can't be subtracted!" << std::endl;
+            std::cerr << "Матрицы нельзя вычитать!" << std::endl;
             return Matrix(0, 0);
         }
 
@@ -154,7 +154,7 @@ namespace math
     {
         if (A.cols_ != B.rows_)
         {
-            std::cerr << "Matrix: Matrices can't be multiplied!" << std::endl;
+            std::cerr << "Матрицы нельзя умножать!" << std::endl;
             return Matrix(0, 0);
         }
 
